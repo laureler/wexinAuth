@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="//cdn.bootcss.com/eruda/1.4.2/eruda.min.js"></script>
+    <script>eruda.init();</script>
+
+
+    <title>广东省不动产登记外网预申请系统</title>
+    <style>
+        html,body{
+            margin:0;padding:0;
+        }
+        #inMap_bottom_ctrl{
+            z-index:100 !important;
+        }
+        iframe{
+            display: none;
+        }
+        /* 移动端字体适配 */
+        @media screen and (min-width: 320px) {html{font-size:50px;!important;}}
+        @media screen and (min-width: 360px) {html{font-size:56.25px;!important}}
+        @media screen and (min-width: 375px) {html{font-size:58.59375px;!important}}
+        @media screen and (min-width: 400px) {html{font-size:62.5px;!important}}
+        @media screen and (min-width: 414px) {html{font-size:64.6875px;!important}}
+        @media screen and (min-width: 440px) {html{font-size:68.75px;!important}}
+        @media screen and (min-width: 480px) {html{font-size:75px;!important}}
+        @media screen and (min-width: 520px) {html{font-size:81.25px;!important}}
+        @media screen and (min-width: 560px) {html{font-size:87.5px;!important}}
+        @media screen and (min-width: 600px) {html{font-size:93.75px;!important}}
+        @media screen and (min-width: 640px) {html{font-size:100px;!important}}
+        @media screen and (min-width: 680px) {html{font-size:106.25px;!important}}
+        @media screen and (min-width: 720px) {html{font-size:112.5px;!important}}
+        @media screen and (min-width: 760px) {html{font-size:118.75px;!important}}
+        @media screen and (min-width: 800px) {html{font-size:125px;!important}}
+        @media screen and (min-width: 960px) {html{font-size:150px;!important}}
+    </style>
+
+  </head>
+  <body>
+    <div id="app-box"></div>
+  </body>
+  <script>
+
+        window.onload=function(e){
+            var _body=document.getElementsByTagName('body')[0];
+            _body.style.height=_body.clientHeight+"px";
+            var _html=document.getElementsByTagName('html')[0],
+                 _body=document.getElementsByTagName('body')[0];
+
+            //  console.log(_html.clientHeight)
+            if(_html.clientHeight == 603){
+                 _body.style.height=_html.clientHeight-49+"px";
+
+            }else{
+                 _body.style.height=_html.clientHeight+"px";
+
+
+
+            }
+
+
+
+        }
+  </script>
+</html>

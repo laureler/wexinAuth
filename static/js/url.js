@@ -1,0 +1,1 @@
+export default 'http://7ca05664.ngrok.io/pubWeb/public/index.html'
